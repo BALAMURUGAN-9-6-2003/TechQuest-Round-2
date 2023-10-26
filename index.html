@@ -1,187 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Techquest</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <style>
+<head>
 
-  @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Condensed:wght@200&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techquest</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Condensed:wght@200&display=swap');
 
-      body {
-        overflow: hidden;
-        font-family: 'Gabarito', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
+    body {
+      overflow: hidden;
+      font-family: 'Gabarito', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+      
+    }
+    h1
+    {
+      font-weight: bolder;
+    }
+    .tablerow
+    {
+      display: grid;
+      place-items: center;
+    }
+
+    .button {
+      color: white;
+    }
+
+    button {
+      outline: none;
+      border: none;
+    }
+
+    .noscroll {
+      display: grid;
+      text-align: center;
+      height: 66vh;
+
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .noscroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .bottom {
+        font-size: 15px;
       }
+
       .button {
-        color: white;
+        font-size: 15px;
       }
-      button {
-        outline: none;
-        border: none;
-      }
-      .noscroll {
-        display: grid;
-        text-align: center;
-        height: 66vh;
+    }
 
-        overflow-y: scroll;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      .noscroll::-webkit-scrollbar {
-        display: none;
+    @media (min-width: 1024px) {
+      .bottom {
+        font-size: 20px;
       }
 
-      @media (min-width: 768px) {
-        .bottom {
-          font-size: 22px;
-        }
-        .button {
-          font-size: small;
-        }
+      .button {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .bottom {
+        font-size: 22px;
       }
 
-      @media (min-width: 1024px) {
-        .bottom {
-          font-size: x-large;
-        }
-        .button {
-          font-size: medium;
-        }
+      .button {
+        font-size: 22px;
       }
-      @media (min-width: 1440px) {
-        .bottom {
-          font-size: xx-large;
-        }
-        .button {
-          font-size: large;
-        }
+    }
+
+    @media (min-width: 1200px) {
+      .bottom {
+        font-size: large;
       }
 
-      @media (min-width: 1200px) {
-        .bottom {
-          font-size: x-large;
-        }
-        .button {
-          font-size: x-large;
-        }
+      .button {
+        font-size: x-large;
+      }
+    }
+
+    @media (min-width: 3840px) {
+      .bottom {
+        font-size: 30px;
       }
 
-      @media (min-width: 3840px) {
-        .bottom {
-          font-size: xx-large;
-        }
-        .button {
-          font-size: xx-large;
-        }
+      .button {
+        font-size: 30px;
       }
-    </style>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div
-        class="row bg-info text-center"
-        style="height: 7vh; display: flex; align-items: center"
-      >
-        <div class="col-12" style="color: white">
-          <h1>Sales Bill</h1>
-        </div>
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row bg-info text-center" style="height: 7vh; display: flex; align-items: center">
+      <div class="col-12" style="color: white">
+        <h1>Sales Bill</h1>
       </div>
+    </div>
 
-      <div class="row border bg-primary" style="height: 7vh">
-        <div class="col-6" style="display: grid; place-items: center">
-          <input
-            type="text"
-            style="
+    <div class="row border bg-primary" style="height: 7vh">
+      <div class="col-6" style="display: grid; place-items: center">
+        <input type="text" style="
               width: 100%;
               height: 90%;
               border-radius: 3px;
               overflow: hidden;
               border: 0;
               text-align: center;
-            "
-          />
-        </div>
-        <div class="col-6" style="display: grid; place-items: center">
-          <input
-            type="text"
-            style="
+            " />
+      </div>
+      <div class="col-6" style="display: grid; place-items: center">
+        <input type="text" style="
               width: 100%;
               height: 90%;
               border-radius: 3px;
               overflow: hidden;
               border: 0;
               text-align: center;
-            "
-          />
-        </div>
+            " />
       </div>
+    </div>
 
-      <div class="row" style="height: 66vh">
-        <div class="col-6 border noscroll">
-          
-        </div>
-        <div class="col-4 border noscroll">
-          
-        </div>
-        <div class="col-2 border bg-dark button">
-          <div class="row border" style="color: white">
-            <button class="col-12 p-3 btn-success button">Add Customer</button>
-          </div>
-          <div class="row border" style="color: white">
-            <button class="col-12 p-3 bg-primary button">Search Product</button>
-          </div>
-          <div class="row border" style="color: white">
-            <button class="col-12 p-3 bg-danger button">Point System</button>
-          </div>
-          <div class="row border" style="color: white">
-            <button class="col-12 p-3 bg-success button">Add Customer</button>
-          </div>
-          <div class="row border" style="color: white">
-            <button class="col-12 p-3 bg-dark button">Add Customer</button>
-          </div>
-        </div>
+    <div class="row" style="height: 66vh">
+      <div class="col-6 border noscroll">
+
       </div>
+      <div class="col-4 border noscroll">
 
-      <div class="row bottom" style="height: 20vh">
-        <div
-          class="container-fluid border bottomfixed bg-dark B-content"
-          style="color: white"
-        >
-          <div class="row">
-            <div class="col-2 bg-dark"></div>
-            <div class="col-2 bg-dark border">Sub-Total</div>
-            <div class="col-2 bg-dark border">100</div>
-            <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
-          </div>
-          <div class="row">
-            <div class="col-2 bg-dark"></div>
-            <div class="col-2 bg-dark border">Discount</div>
-            <div class="col-2 bg-dark border">100</div>
-            <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
-          </div>
-          <div class="row">
-            <div class="col-2 bg-dark"></div>
-            <div class="col-2 bg-dark border">AMOUNT</div>
-            <div class="col-2 bg-dark border">0</div>
-            <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
-          </div>
-          <div class="row">
-            <div class="col-2 bg-dark border">Pointer</div>
-            <div class="col-2 bg-dark border">0</div>
-            <div class="col-2 bg-dark border">1</div>
-            <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
-          </div>
+      </div>
+      <div class="col-2 border bg-dark button">
+        <div class="row border" style="color: white">
+          <button class="col-12 p-3 btn-success button">Add Customer</button>
+        </div>
+        <div class="row border" style="color: white">
+          <button class="col-12 p-3 bg-primary button">Search Product</button>
+        </div>
+        <div class="row border" style="color: white">
+          <button class="col-12 p-3 bg-danger button">Point System</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row bottom" style="height: 20vh">
+      <div class="container-fluid border bottomfixed bg-dark B-content" style="color: white">
+        <div class="row">
+          <div class="col-2 bg-dark"></div>
+          <div class="col-2 bg-dark border tablerow">Sub-Total</div>
+          <div class="col-2 bg-dark border tablerow">100</div>
+          <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
+        </div>
+        <div class="row ">
+          <div class="col-2 bg-dark"></div>
+          <div class="col-2 bg-dark border tablerow">Discount</div>
+          <div class="col-2 bg-dark border tablerow">100</div>
+          <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
+        </div>
+        <div class="row">
+          <div class="col-2 bg-dark"></div>
+          <div class="col-2 bg-dark border tablerow">AMOUNT</div>
+          <div class="col-2 bg-dark border tablerow">0</div>
+          <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
+        </div>
+        <div class="row">
+          <div class="col-2 bg-dark border tablerow">Pointer</div>
+          <div class="col-2 bg-dark border tablerow ">0</div>
+          <div class="col-2 bg-dark border tablerow">1</div>
+          <div class="col-6 bg-dark border-0" style="height: 5vh"></div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
